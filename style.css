@@ -112,7 +112,7 @@ body {
 .script-box {
     outline: none;
     border: none;
-    width: 560px;
+    width: auto;
     background-color: #171717;
     border: 1px solid rgb(66, 66, 66);
     border-radius: 10px;
@@ -123,7 +123,11 @@ body {
     font-family: Poppins,sans-serif;
     margin-bottom: 100px;
     opacity: 0.6;
-    transition: 0.2s
+    transition: 0.2s;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
 }
 
 .script-box:hover {
@@ -194,4 +198,16 @@ body {
     margin-top: 25px;
     margin-bottom: 25px;
     font-size: 22px;
+}
+
+.footer-span2 {
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 22px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
 }
