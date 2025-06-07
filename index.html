@@ -1,100 +1,64 @@
 <html>
+
 <head>
-    <title>sUNC</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="img/favicon.webp">
-    <meta content="sUNC" property="og:title" />
-    <meta content="Exposing UNC Fakers, ensuring YOU that your exploit is reliable" property="og:description" />
-    <meta content="#00ff88" data-react-helmet="true" name="theme-color" />
-</head>
-<body>
-    <script src="script.js"></script>
-    <script>
-        function copyScript() {
-            const scriptContent = document.getElementById('script').textContent;
-            navigator.clipboard.writeText(scriptContent).then(() => {
-                alert('Script copied to clipboard!');
-            }).catch(err => {
-                console.error('Failed to copy script: ', err);
-            });
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>sUNC | senS' Unified Naming Convention</title>
+    <meta name="description"
+        content="A strict, modern standard for testing Luau executor environments. Don't just spoof it, Prove it." />
+    <meta name="theme-color" content="#b65de9" />
+    <link rel="icon" href="https://sunc.su/sunc.png" type="image/png" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sunc.su/" />
+    <meta property="og:title" content="sUNC | senS' Unified Naming Convention" />
+    <meta property="og:description"
+        content="A strict, modern standard for testing Luau executor environments. Don't just spoof it, Prove it." />
+    <meta property="og:image" content="https://sunc.su/opengraph.png" />
+    <meta property="og:image:width" content="3000" />
+    <meta property="og:image:height" content="1024" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://sunc.su/" />
+    <meta name="twitter:title" content="sUNC | senS' Unified Naming Convention" />
+    <meta name="twitter:description"
+        content="A strict, modern standard for testing Luau executor environments. Don't just spoof it, Prove it." />
+    <meta name="twitter:image" content="https://sunc.su/opengraph.png" />
+
+    <meta http-equiv="refresh" content="0; url=https://sunc.su/" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600&amp;display=swap");
+
+        body {
+            background: linear-gradient(to bottom right, #1b1b2a, #12121c);
+            color: white;
+            font-family: 'Nunito Sans', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
         }
-        </script>
-    <div class="nav">
-        <a href="index.html" style="margin-left: 0;" class="nav-item active">Home</a>
-        <a href="about.html" class="nav-item">Info</a>
-        <a href="contributors.html" class="nav-item">Contributors</a>
-        <a href="https://discord.gg/e6twjtZpJa" target="_blank" class="nav-item">Discord</a>
-    </div>
-    <div class="main">
-        <span class="title">sUNC</span></span>
-        <span class="subtitle">Exposing UNC Fakers, ensuring YOU that your exploit is reliable</span>
-    </div>
-    <div class="script">
-        <div class="script-box">
-            <span id="script">loadstring(game:HttpGet('https://pastebin.com/raw/3XS7x8mV'))()</span>
-            <button style="background-color: transparent; border: none; padding: 10px; border-radius: 5px; cursor: pointer;" onclick="copyScript()">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="rgb(147, 147, 147)">
-                    <path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"/>
-                </svg>
-            </button>
-        </div>
-    </div>
-    <div class="certified">
-        <span class="certified-title">sUNC Certified Exploits</span>
-        <div class="certified-item">
-            <img style="margin-right: 11px;" src="img/SynZ.avif">
-            <div class="divider"></div>
-            <span>Synapse Z</span>
-            <img style="width: 105px;" src="img/badge.webp">
-        </div>
-        <div class="certified-item">
-            <img style="margin-right: 12px;" src="img/Wave.webp">
-            <div class="divider"></div>
-            <span>Wave</span>
-            <img style="width: 105px;" src="img/badge.webp">
-        </div>
-        <div class="certified-item">
-            <img style="margin-right: 12px;" src="img/seliware.webp">
-            <div class="divider"></div>
-            <span>Seliware</span>
-            <img style="width: 105px;" src="img/badge.webp">
-        </div>
-        <div class="certified-item">
-            <img style="margin-right: 12px;" src="img/swift.webp">
-            <div class="divider"></div>
-            <span>Swift</span>
-            <img style="width: 105px;" src="img/badge.webp">
-        </div>
-        <div class="certified-item">
-            <img style="margin-right: 12px;" src="img/Nihon.avif">
-            <div class="divider"></div>
-            <span>Nihon</span>
-            <img style="width: 105px;" src="img/badge.webp">
-        </div>
-    </div>
-    <div style="margin-top: 35px; margin-bottom: 50px;" class="certified">
-        <span class="certified-title">Hall of Faking</span>
-        <div class="certified-item">
-            <img style="margin-right: 11px;" src="img/krucus.png">
-            <div class="divider"></div>
-            <span>Krucus</span>
-            <img style="width: 105px;" src="img/BadBadge.png">
-        </div>
-        <div class="certified-item">
-            <img style="margin-right: 12px;" src="img/SynXRemake.png">
-            <div class="divider"></div>
-            <span>SynX Remake</span>
-            <img style="width: 105px;" src="img/BadBadge.png">
-        </div>
-        <div class="certified-item">
-            <img style="margin-right: 12px;" src="img/RoScript.png">
-            <div class="divider"></div>
-            <span>Ro-Script💔</span>
-            <img style="width: 105px;" src="img/BadBadge.png">
-        </div>
-    </div>
-    <div class="footer">
-        <span>© 2024 sUNC. All Rights Reserved.</span>
+
+        a {
+            color: #bd9af4;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Redirecting to sUNC...</h1>
+        <p>If you are not redirected automatically, <a href="https://sunc.su/">click here</a>.</p>
     </div>
 </body>
+
 </html>
